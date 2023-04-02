@@ -1,0 +1,11 @@
+@include laptop {
+  .calc {
+    &__fieldset_size {
+      margin-bottom: 24px;
+    }
+
+    &__fieldset_tariff {
+      margin-bottom: 34px;
+    }
+  }
+}

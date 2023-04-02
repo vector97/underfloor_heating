@@ -1,0 +1,25 @@
+@include mobile {
+  .modal {
+    &__main {
+      max-width: 308px;
+    }
+
+    &__container {
+      flex-direction: column;
+
+      &::after {
+        flex-basis: 214px;
+
+        background-image: url('../img/modal-bg-mobile.jpg');
+      }
+    }
+
+    &__content {
+      padding: 40px 20px 20px;
+    }
+
+    &__fieldset {
+      flex-direction: column;
+    }
+  }
+}

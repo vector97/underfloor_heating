@@ -1,0 +1,14 @@
+@include mobile {
+  .hero {
+    &__description {
+      margin-bottom: 24px;
+
+      font-size: 12px;
+    }
+
+    &__slider-block {
+      max-width: var(--width-slide);
+      margin: 0 auto;
+    }
+  }
+}

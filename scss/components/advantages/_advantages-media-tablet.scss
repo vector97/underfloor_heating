@@ -1,0 +1,24 @@
+@include tablet {
+  .advantages {
+    &__container {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__title {
+      max-width: 440px;
+    }
+
+    &__list {
+      padding-left: 30px;
+    }
+
+    &__item {
+      font-size: 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

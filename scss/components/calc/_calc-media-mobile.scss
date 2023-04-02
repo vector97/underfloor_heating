@@ -1,0 +1,36 @@
+@include mobile {
+  .calc {
+    &__fieldset_size {
+      flex-direction: column;
+
+      margin-bottom: 16px;
+    }
+
+    &__fieldset_tariff {
+      margin-bottom: 24px;
+    }
+
+    &__input-label_tariff {
+      display: flex;
+
+      margin-right: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__total {
+      min-height: 128px;
+    }
+
+    &__result-wrapper {
+      row-gap: 9px;
+
+      min-width: auto;
+      width: 268px;
+      min-height: auto;
+      padding: 16px;
+    }
+  }
+}

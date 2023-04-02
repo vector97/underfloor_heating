@@ -1,0 +1,9 @@
+@include laptop {
+  .footer {
+    &__container {
+      column-gap: 86px;
+
+      padding-top: 30px;
+    }
+  }
+}

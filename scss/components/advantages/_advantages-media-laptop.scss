@@ -1,0 +1,12 @@
+@include laptop {
+  .advantages {
+    &__title {
+      max-width: 330px;
+      padding-left: 30px;
+    }
+
+    &__item {
+      font-size: 20px;
+    }
+  }
+}

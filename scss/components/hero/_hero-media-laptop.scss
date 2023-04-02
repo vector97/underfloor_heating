@@ -1,0 +1,7 @@
+@include laptop {
+  .hero {
+    &__description {
+      margin-bottom: 98px;
+    }
+  }
+}

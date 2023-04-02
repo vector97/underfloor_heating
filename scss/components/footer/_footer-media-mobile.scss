@@ -1,0 +1,21 @@
+@include mobile {
+  .footer {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .socials {
+      margin-top: 0;
+    }
+
+    &__copiright {
+      order: 1;
+    }
+
+    .contacts {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.footer {
+padding-bottom: 40px;
+
+  &__container {
+    display: grid;
+    gap: 40px 126px;
+    grid-template-columns: max-content auto max-content;
+    grid-template-areas:
+    "logo socials contacts"
+    "copy . developers";
+
+    padding-top: 50px;
+
+    border-top: 2px solid $gray-bg-color;
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  .socials {
+    grid-area: socials;
+    justify-self: end;
+
+    display: flex;
+    gap: 24px;
+
+    margin-top: 8px;
+
+    svg {
+      display: block;
+    }
+  }
+
+  .contacts {
+    grid-area: contacts;
+
+    margin-top: 8px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  &__copiright {
+    grid-area: copy;
+  }
+
+  .developers {
+    grid-area: developers;
+
+    &__item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
+

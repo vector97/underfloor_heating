@@ -1,0 +1,65 @@
+:root {
+  --width-slide: 590px;
+  --width-block: calc(50% - 5px);
+  --gap: 10px;
+  --padding: 50px;
+}
+
+/* указать шрифт под проект font-family */
+$default-font: 'Inter', sans-serif;
+
+/* указать размер шрифта под проект font-size */
+$default-size: 16px;
+
+/* указать высоту строки под проект */
+$default-height: 1.5;
+
+/* указать насыщенность шрифта под проект */
+$default-weight: 400;
+
+/* указать цвет шрифта под проект color */
+$default-color: #232020;
+
+/* указать цвет фона под проект background-color */
+$default-background: #ffffff;
+
+/* альтернативные цвета */
+$gray-text-color: #898989;
+$gray-bg-color: #f8f8f8;
+$yellow-color: #ffc700;
+$disabled-color: #e0e0e0;
+
+/* указать ширину контейнера
+Пример контейнера
+Если контейнер 1180px по макету,
+то для max-width прибавляем паддинги 30px*2,
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана */
+$content-width: 1190px;
+
+/* указать брейкпоинты по макету */
+$breakpoint_xxl: 1440px;
+$breakpoint_xl: 1240px;
+$breakpoint_md: 920px;
+$breakpoint_sm: 560px;
+
+@media (max-width: $breakpoint_xl) {
+  :root {
+    --width-slide: 440px;
+    --padding: 30px;
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  :root {
+    --width-slide: 311px;
+    --padding: 24px;
+  }
+}
+
+@media (max-width: $breakpoint_sm) {
+  :root {
+    --padding: 20px;
+    --gap: 4px;
+  }
+}
